@@ -1,0 +1,35 @@
+cat > .gitignore <<'EOF'
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Terraform variables containing sensitive values
+*.tfvars
+*.tfvars.json
+
+# Terraform lock file - keep this in Git
+# .terraform.lock.hcl
+
+# Terraform CLI config
+.terraformrc
+terraform.rc
+
+# SSH private keys
+*.pem
+id_rsa
+id_rsa.*
+
+# AWS credentials
+.aws/
+credentials
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+EOF
